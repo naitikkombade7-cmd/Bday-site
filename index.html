@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">🎉 Happy Birthday 🎉</h1>
+
+    <p class="name">To Someone Very Special 💕</p>
+
+    <div class="card">
+      <p>
+        On this special day, I just want to say<br>
+        you mean more than words can ever explain 💫<br><br>
+        May your life be filled with happiness,<br>
+        love, success and endless smiles 💖
+      </p>
+    </div>
+
+    <button onclick="showWish()">Tap for Surprise 🎁</button>
+
+    <p id="hiddenWish" class="hidden">
+      You are the reason someone smiles today 💝  
+      Never forget how amazing you are 🌸
+    </p>
+  </div>
+
+  <div class="hearts">
+    ❤️ 💕 💖 💗 💘
+  </div>
+
+  <script>
+    function showWish() {
+      document.getElementById("hiddenWish").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
