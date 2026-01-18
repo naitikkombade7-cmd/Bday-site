@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #2b0033, #000);
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  max-width: 350px;
+  padding: 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 20px rgba(255, 0, 150, 0.3);
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+button {
+  background: linear-gradient(90deg, #ff4d9d, #ff2e63);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.hidden {
+  display: none;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ffb3d9;
+}
+
+.hearts {
+  position: absolute;
+  bottom: 20px;
+  font-size: 22px;
+  animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
